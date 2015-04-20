@@ -1,0 +1,32 @@
+$yellow: #F4D03F;
+$dark-grey: #2C3E50;
+$light-grey: #ECF0F1;
+
+#land {
+  .photo-container {
+    background-color: $yellow;
+    color: $dark-grey;
+    height: 100vh;
+  }
+
+  .about-container {
+    background-color: $dark-grey;
+    color: $light-grey;
+    padding-left: 0;
+    height: 100vh;
+
+    #ramp {
+      height: 100vh;
+      position: relative;
+
+      &::before {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        border-top: 100vh solid $yellow;
+        border-right: 100px solid $dark-grey;
+      }
+    }
+  }
+}
